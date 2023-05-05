@@ -8,7 +8,12 @@ function App() {
     if (mapViewRef.current) init(mapViewRef.current);
   }, [mapViewRef]);
 
-  return <div style={{ maxWidth: 100, maxHeight: 100 }} ref={mapViewRef}></div>;
+  return (
+    <div
+      style={{ padding: 10, margin: 10, height: 500, width: 500 }}
+      ref={mapViewRef}
+    ></div>
+  );
 }
 
 export default App;
